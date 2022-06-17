@@ -1,0 +1,234 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* START NAVBAR */
+.navbar {
+    background-color: var(--dark-color);
+    position:sticky;
+    top:0;
+    z-index:999999;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+    
+}
+#current{
+    color:var(--green-color);
+    border-bottom:2px solid var(--yellow-color);
+    box-shadow: 0 5px 3px var(--yellow-color);
+    
+}
+.navbar-dark .navbar-nav .nav-link:not(#searchicon):hover{
+    color:var(--green-color);
+    border-bottom:2px solid var(--yellow-color);
+    box-shadow: 0 5px 3px var(--yellow-color);
+    
+}
+
+.navbar-nav:hover #current {
+    border-bottom:none;
+    box-shadow: none;
+}
+
+#searchicon {
+    color:var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+
+.main-btn {
+    background-color:var(--red-color) ;
+    color:var(--yellow-color);
+    border:0;
+}
+.main-btn:hover {
+    cursor: pointer;
+    border-bottom:2px solid var(--yellow-color);
+    box-shadow: 0 0px 0.5px var(--yellow-color);
+}
+.navbar-toggler[aria-expanded="true"]  {
+    border:2px solid var(--green-color);
+    box-shadow: 0 5px 3px var(--green-color);
+    color:var(--green-color);
+}
+/* END NAVBAR */
+/* START INTRO */
+
+.intro {
+    background-color: var(--dark-color);
+    height:calc(100vh - 70px)
+}
+
+/* END INTRO */
+/* START Services */
+.main-title {
+    position: relative;
+}
+.main-title::after {
+    content:' ';
+    height:2px;
+    width:200px;
+    background-color:var(--green-color);
+    position: absolute;
+    bottom:-20px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.number-icon {
+
+    height:200px;
+}
+.number-icon svg {
+    left:50%;
+    transform: translateX(-50%);
+}
+.number {
+    color:var(--section-color);
+    font-size: 12rem;
+}
+.icon {
+    color:var(--green-color);
+}
+.cards h3 {
+    color:var(--yellow-color);
+}
+/* END SERVICES */
+/* START PROJECTS */
+.projects {
+    background-color: var(--section-color);
+}
+.tabs a {
+    color:black;
+    font-size: 1rem;
+}
+.tabs a:hover {
+    color:var(--red-color);
+    
+}
+.tabs .main-btn {
+    color:var(--yellow-color);
+}
+.tabs .main-btn:hover {
+    color:var(--yellow-color);
+}
+.project-cards img {
+    padding: 5px;
+    position: relative;
+}
+.prj {
+    width:310px;
+    position: relative;
+    overflow: hidden;
+}
+.prj::before{
+    content:'Application';
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+    background-color: #33d1cca8;
+    
+    position: absolute;
+    top:5px;
+    left:calc(-100% + 10px );
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    color:white;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+.prj:hover{
+    cursor: pointer;
+}
+.prj:hover::before{
+    transform: translateX(calc(100% + 5px));
+}
+/* END PROJECTS */
+/* START TEAM */
+.team-color {
+    color: var(--yellow-color);
+}
+.meet {
+    background-color: var(--section-color);
+}
+.card {
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border-bottom:2px solid var(--yellow-color);
+    box-shadow: 0 5px 3px var(--yellow-color);
+}
+/* END TEAM */
+/* START START */
+.start {
+    background-color: var(--dark-color);
+}
+/* END START */
+/* START SUBSCRIBE */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe input {
+    border:none;
+    border-bottom: 1px solid white;
+}
+.subscribe input:focus {
+    outline: none;
+}
+.subscribe input::placeholder{
+    color:white;
+    font-weight: 600;
+}
+.subscribe label{
+    color:var(--dark-color);
+}
+.subscribe button {
+    color:var(--yellow-color);
+    background-color: var(--dark-color);
+    transition: 0.2s ease-in-out;
+}
+.subscribe button:hover{
+    color:var(--red-color);
+    transform: scale(1.1);
+    box-shadow: 0 2px 1px var(--red-color);
+}
+/* END SUBSCRIBE */
+/*START FOOTER*/
+.footer{
+    background-color: var(--dark-color);
+}
+.firstspan {
+    color: var(--green-color);
+}
+.secondspan {
+    color: var(--yellow-color);
+}
+.fb {
+    background-color: #1877f2;
+
+}
+.twitter {
+    background-color: #1da1f2;
+    
+}
+.linkedin {
+    background-color: #0077b5;
+    
+}
+.youtube {
+    background-color: #ff0000;
+    
+}
+/*END FOOTER*/
